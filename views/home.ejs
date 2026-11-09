@@ -14,9 +14,17 @@
     <h3>
         <%= person.occupation %>
     </h3>
-    <p>
-        <%= person.favoriteColor %>
-    </p>
+    <% if (['plumber', 'organist' , 'bagpiper' ].includes(person.occupation.toLowerCase())) { %>
+        <p>You work with pipes!</p>
+        <% } else { %>
+            <p>That's an interesting job!</p>
+        <% } %>
+
+    <% if (['red', 'orange' , 'yellow', 'green', 'blue', 'indigo', 'violet' ].includes(person.favoriteColor.toLowerCase())) { %>
+        <p>One of the colors of the rainbow!</p>
+        <% } else { %>
+            <p>That's a cool color!</p>
+         <% } %>
 </body>
 
 </html>
