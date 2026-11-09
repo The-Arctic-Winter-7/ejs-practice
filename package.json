@@ -20,6 +20,7 @@
   "homepage": "https://github.com/The-Arctic-Winter-7/ejs-practice#readme",
   "dependencies": {
     "ejs": "^7.0.2",
+    "expres": "^0.0.5",
     "express": "^5.3.0"
   },
   "devDependencies": {

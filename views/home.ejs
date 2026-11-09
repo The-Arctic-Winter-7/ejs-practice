@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <%- include('partials/header') %>
+    <main>
     <h1>EJS Practice</h1>
     <h2>Hello, <%= person.name %>
     </h2>
@@ -25,6 +27,8 @@
         <% } else { %>
             <p>That's a cool color!</p>
          <% } %>
+    </main>
+    <%- include('partials/footer') %>
 </body>
 
 </html>
